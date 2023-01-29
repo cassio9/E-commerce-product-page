@@ -1,20 +1,20 @@
 import CloseIcon from "../assets/icon-close.svg";
 
 type Props = {
-	OpenModal: boolean;
+	openModal: boolean;
 	setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const ModalMenu = ({ OpenModal, setOpenModal }: Props) => {
+const ModalMenu = ({ openModal, setOpenModal }: Props) => {
 	return (
 		<div className="absolute ease-in transition-all duration-1000">
 			<div
 				className={`fixed bg-black opacity-70 w-full top-0 bottom-0  ease-in transition-all duration-300 ${
-					OpenModal ? "left-0 " : "-left-[100%]"
+					openModal ? "left-0 " : "-left-[100%]"
 				}`}></div>
 			<nav
 				className={`fixed h-screen w-[75%] flex flex-col p-4 top-0 bottom-0 justify-start items-start bg-white ease-in transition-all duration-500 
-                ${OpenModal ? "left-0 " : "-left-[100%]"}`}>
+                ${openModal ? "left-0 " : "-left-[100%]"}`}>
 				<img
 					src={CloseIcon}
 					alt="Close Icon"
