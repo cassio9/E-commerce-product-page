@@ -15,7 +15,7 @@ const Header = () => {
 
 	return (
 		<div
-			className="md:border-b-2 md:pb-8 md:mb-4 md:max-w-4xl lg:mx-auto flex justify-between items-center p-4 relative"
+			className="md:border-b-[1px] md:pb-8 md:mb-4 md:max-w-5xl mx-auto max-w-lg  flex justify-between items-center p-4 relative"
 			style={{ zIndex: 100 }}>
 			<div className="flex items-baseline gap-4">
 				<img

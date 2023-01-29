@@ -8,12 +8,12 @@ const Cart = () => {
 	const addCart = useCartStore((state) => state.AddCart);
 
 	return (
-		<div className="p-4">
-			<div className="flex justify-around bg-LightGrayishBlue px-4 py-2 items-center rounded-xl">
+		<div className="p-4 md:flex md:gap-4 md:items-baseline md:max-w-md">
+			<div className="flex justify-around bg-LightGrayishBlue px-4 items-center rounded-xl">
 				<div className="text-Orange text-3xl px-4 pb-1" onClick={decrease}>
 					-
 				</div>
-				<p className="font-bold text-xl">{previewProduct}</p>
+				<p className="font-bold text-xl md:py-4">{previewProduct}</p>
 				<div className="text-Orange text-3xl px-4 pb-1" onClick={increase}>
 					+
 				</div>
