@@ -1,5 +1,5 @@
 import CartIcon from "../../assets/icon-cart.svg";
-import { useCartStore } from "../../useCartStore";
+import { useCartStore } from "../../hooks/useCartStore";
 
 const Cart = () => {
 	const previewProduct = useCartStore((state) => state.previewProduct);

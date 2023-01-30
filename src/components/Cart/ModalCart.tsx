@@ -1,5 +1,5 @@
 import CartItem from "./CartItem";
-import { useCartStore } from "../../useCartStore";
+import { useCartStore } from "../../hooks/useCartStore";
 import { useRef, useEffect } from "react";
 
 type Props = {

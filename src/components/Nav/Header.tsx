@@ -4,7 +4,7 @@ import Logo from "../../assets/logo.svg";
 import Cart from "../../assets/icon-cart1.svg";
 import { useState, useEffect } from "react";
 import ModalMenu from "./ModalMenu";
-import { useCartStore } from "../../useCartStore";
+import { useCartStore } from "../../hooks/useCartStore";
 import ModalCart from "../Cart/ModalCart";
 import { navBarHtml } from "../../utilsNav";
 

@@ -1,6 +1,6 @@
 import ProductImg1Thumb from "../../assets/image-product-1-thumbnail.jpg";
 import TrashIcon from "../../assets/icon-delete.svg";
-import { useCartStore } from "../../useCartStore";
+import { useCartStore } from "../../hooks/useCartStore";
 
 const CartItem = () => {
 	const ProductCart = useCartStore((state) => state.product);

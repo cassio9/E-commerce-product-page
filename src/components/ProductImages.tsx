@@ -10,7 +10,7 @@ import ArrowNext from "../assets/icon-next.svg";
 import ArrowPrev from "../assets/icon-previous.svg";
 import { useState } from "react";
 import ImageThumb from "./ImageThumb";
-import { useWindowsSize } from "../useWindowsSize";
+import { useWindowsSize } from "../hooks/useWindowsSize";
 
 type Props = {
 	setOpenLightBoxImage: React.Dispatch<React.SetStateAction<boolean>>;
