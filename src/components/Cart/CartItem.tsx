@@ -1,6 +1,6 @@
-import ProductImg1Thumb from "../assets/image-product-1-thumbnail.jpg";
-import TrashIcon from "../assets/icon-delete.svg";
-import { useCartStore } from "../useCartStore";
+import ProductImg1Thumb from "../../assets/image-product-1-thumbnail.jpg";
+import TrashIcon from "../../assets/icon-delete.svg";
+import { useCartStore } from "../../useCartStore";
 
 const CartItem = () => {
 	const ProductCart = useCartStore((state) => state.product);
@@ -16,7 +16,7 @@ const CartItem = () => {
 					<span className="text-VeryDarkBlue font-bold"> ${ProductCart * 125}.00</span>
 				</p>
 			</div>
-			<img src={TrashIcon} alt="" onClick={deleteProducts} />
+			<img className="cursor-pointer" src={TrashIcon} alt="" onClick={deleteProducts} />
 		</div>
 	);
 };

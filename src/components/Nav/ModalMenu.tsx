@@ -1,4 +1,5 @@
-import CloseIcon from "../assets/icon-close.svg";
+import CloseIcon from "../../assets/icon-close.svg";
+import { modalNavBarHtml } from "../../utilsNav";
 
 type Props = {
 	openModal: boolean;
@@ -7,11 +8,12 @@ type Props = {
 
 const ModalMenu = ({ openModal, setOpenModal }: Props) => {
 	return (
-		<div className="absolute ease-in transition-all duration-1000">
+		<div className="absolute ease-in transition-all duration-1000" style={{ zIndex: 100 }}>
 			<div
 				className={`fixed bg-black opacity-70 w-full top-0 bottom-0  ease-in transition-all duration-300 ${
 					openModal ? "left-0 " : "-left-[100%]"
-				}`}></div>
+				}`}
+				onClick={() => setOpenModal(false)}></div>
 			<nav
 				className={`fixed h-screen w-[75%] flex flex-col p-4 top-0 bottom-0 justify-start items-start bg-white ease-in transition-all duration-500 
                 ${openModal ? "left-0 " : "-left-[100%]"}`}>
@@ -22,11 +24,7 @@ const ModalMenu = ({ openModal, setOpenModal }: Props) => {
 					onClick={() => setOpenModal(false)}
 				/>
 				<ul className="flex flex-col gap-6 font-bold text-VeryDarkBlue cursor-pointer">
-					<li>Collections</li>
-					<li>Men</li>
-					<li>Women</li>
-					<li>About</li>
-					<li>Contact</li>
+					{modalNavBarHtml}
 				</ul>
 			</nav>
 		</div>
