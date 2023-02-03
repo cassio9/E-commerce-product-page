@@ -7,7 +7,9 @@ const CartItem = () => {
 	const deleteProducts = useCartStore((state) => state.deleteProducts);
 
 	return (
-		<div className="grid grid-cols-[1fr_4fr_.5fr] gap-4 items-center justify-center place-content-start">
+		<div
+			role="banner"
+			className="grid grid-cols-[1fr_4fr_.5fr] gap-4 items-center justify-center place-content-start">
 			<img src={ProductImg1Thumb} alt="" />
 			<div className="text-sm text-DarkGrayishBlue">
 				<p className="">Fall Limited Edition Sneakers</p>

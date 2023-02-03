@@ -1,6 +1,6 @@
 const ProductAbout = () => {
 	return (
-		<div className="p-4 md:max-w-md">
+		<section className="p-4 md:max-w-md">
 			<h2 className="text-Orange font-bold tracking-widest uppercase text-sm ">Sneaker Company</h2>
 			<h1 className="text-3xl lg:text-4xl font-bold py-4 text-VeryDarkBlue">
 				Fall Limited Edition Sneakers
@@ -16,7 +16,7 @@ const ProductAbout = () => {
 				</div>
 				<del className="text-lg text-DarkGrayishBlue">$250.00</del>
 			</div>
-		</div>
+		</section>
 	);
 };
 

@@ -29,6 +29,7 @@ const ModalCart = ({ setOpenCartModal }: Props) => {
 
 	return (
 		<div
+			role="menu"
 			ref={ref}
 			className="absolute md:w-[350px] h-[250px] left-4 md:left-[52%] lg:left-[63%] md:fixed md:right-20 right-4 w-full max-w-md mx-auto md:ml-auto md:top-16 shadow-lg top-20 rounded-lg bg-white h-70 grid grid-rows-[1fr_3fr]"
 			style={{ zIndex: 10 }}>

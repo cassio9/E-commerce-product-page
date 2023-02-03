@@ -33,7 +33,7 @@ const ProductSect = () => {
 	};
 
 	return (
-		<div className="max-w-sm md:pl-4">
+		<div role="productImages" className="max-w-sm md:pl-4">
 			<div className="relative">
 				<img
 					className={`${carImg === 1 ? "block" : "hidden"} md:rounded-3xl `}

@@ -35,7 +35,7 @@ const ProductSect = ({ setOpenLightBoxImage }: Props) => {
 	};
 
 	return (
-		<div className="relative md:pl-4">
+		<div role="banner" className="relative md:pl-4">
 			<div
 				className="relative md:cursor-pointer"
 				onClick={size >= 768 ? () => setOpenLightBoxImage(true) : undefined}>

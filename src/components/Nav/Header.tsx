@@ -19,7 +19,7 @@ const Header = () => {
 	}, [openModal]);
 
 	return (
-		<div className="md:border-b-[1px] md:h-20 md:mb-4 md:max-w-5xl mx-auto max-w-lg  flex justify-between items-center p-4 md:relative">
+		<header className="md:border-b-[1px] md:h-20 md:mb-4 md:max-w-5xl mx-auto max-w-lg  flex justify-between items-center p-4 md:relative">
 			<div className="flex items-center md:h-20 gap-4">
 				<img
 					src={Hamburger}
@@ -57,7 +57,7 @@ const Header = () => {
 			</div>
 			{openCartModal && <ModalCart setOpenCartModal={setOpenCartModal} />}
 			<ModalMenu setOpenModal={setOpenModal} openModal={openModal} />
-		</div>
+		</header>
 	);
 };
 

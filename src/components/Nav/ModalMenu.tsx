@@ -14,7 +14,7 @@ const ModalMenu = ({ openModal, setOpenModal }: Props) => {
 					openModal ? "left-0 " : "-left-[100%]"
 				}`}
 				onClick={() => setOpenModal(false)}></div>
-			<nav
+			<div
 				className={`fixed h-screen w-[75%] flex flex-col p-4 top-0 bottom-0 justify-start items-start bg-white ease-in transition-all duration-500 
                 ${openModal ? "left-0 " : "-left-[100%]"}`}>
 				<img
@@ -26,7 +26,7 @@ const ModalMenu = ({ openModal, setOpenModal }: Props) => {
 				<ul className="flex flex-col gap-6 font-bold text-VeryDarkBlue cursor-pointer">
 					{modalNavBarHtml}
 				</ul>
-			</nav>
+			</div>
 		</div>
 	);
 };

@@ -13,7 +13,7 @@ function App() {
 	const [hoverClose, setHoverClose] = useState(false);
 
 	return (
-		<div className="bg-white font-KumbhSans relative">
+		<main className="bg-white font-KumbhSans relative">
 			<Header />
 			<div className="max-w-lg mx-auto md:grid md:max-w-4xl lg:max-w-4xl md:grid-cols-[1fr_1fr] md:grid-rows-1 gap-6 items-center justify-center md:mt-10">
 				<ProductImages setOpenLightBoxImage={setOpenLightBoxImage} />
@@ -41,7 +41,7 @@ function App() {
 					</div>
 				</div>
 			)}
-		</div>
+		</main>
 	);
 }
 
