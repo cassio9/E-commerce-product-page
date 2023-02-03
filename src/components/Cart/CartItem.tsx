@@ -8,7 +8,7 @@ const CartItem = () => {
 
 	return (
 		<div
-			role="banner"
+			role="article"
 			className="grid grid-cols-[1fr_4fr_.5fr] gap-4 items-center justify-center place-content-start">
 			<img src={ProductImg1Thumb} alt="" />
 			<div className="text-sm text-DarkGrayishBlue">

@@ -28,9 +28,9 @@ const Header = () => {
 					className="cursor-pointer md:hidden"
 				/>
 				<img src={Logo} alt="" />
-				<nav className="md:flex ml-10 gap-4 text-DarkGrayishBlue hidden list-none items-center md:h-20 md:translate-y-4">
+				<ul className="md:flex ml-10 gap-4 text-DarkGrayishBlue hidden list-none items-center md:h-20 md:translate-y-4">
 					{navBarHtml}
-				</nav>
+				</ul>
 			</div>
 			<div className="flex items-center gap-4">
 				<img

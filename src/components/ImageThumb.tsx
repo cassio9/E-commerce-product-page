@@ -8,7 +8,7 @@ interface Props {
 const ImageContainer = ({ carImg, setCarImg, value, imgSrc }: Props) => {
 	return (
 		<div
-			role="productImageThumb"
+			role="status"
 			className={`bg-white rounded-2xl hover:opacity-60 ${
 				carImg === value && "border-2 border-Orange  "
 			} `}>
